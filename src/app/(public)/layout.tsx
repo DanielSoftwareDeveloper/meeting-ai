@@ -1,12 +1,16 @@
-export default function PublicLayout({
+import Navbar from "@/components/shared/navbar/Navbar";
+import Footer from "@/components/shared/footer/Footer";
+
+export default function HomeLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
     <div>
-      <h1 className="">From Public Layout</h1>
-      {children}
+      <Navbar />
+      <main>{children}</main>
+      <Footer />
     </div>
   );
 }
