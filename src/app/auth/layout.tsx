@@ -32,8 +32,8 @@ export default async function AuthLayout({
               <Image
                 src="/logo.png"
                 alt={`${siteConfig.title} logo`}
-                width={90}
-                height={90}
+                width={30}
+                height={30}
               />
               {siteConfig.title}
             </Link>
